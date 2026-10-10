@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSP Filter Lab: design FIR and IIR filters, view responses, filter audio</title>
+    <meta name="description" content="Free in-browser signal processing lab: design FIR (Kaiser, Parks-McClellan, frequency sampling) and IIR (Butterworth, Chebyshev, elliptic, Bessel) filters, plot magnitude, phase, group delay and poles, filter audio with A/B playback and export coefficients as C, Python, CSV or Q15/Q31." />
+    <meta name="keywords" content="digital filter design, FIR filter, IIR filter, Parks-McClellan, Remez, Kaiser window, Butterworth, Chebyshev, elliptic filter, Bessel, biquad, SOS, RBJ audio EQ cookbook, pole-zero plot, group delay, spectrogram, fixed-point Q15, scipy, DSP" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/dsp-filter-lab/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="DSP Lab" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DSP Filter Lab" />
+    <meta property="og:url" content="https://hermes98761234.github.io/dsp-filter-lab/" />
+    <meta property="og:title" content="DSP Filter Lab: design FIR and IIR filters in your browser" />
+    <meta property="og:description" content="Windowed-sinc, Parks-McClellan, Butterworth, Chebyshev, elliptic and Bessel designs with magnitude, phase, group delay and pole-zero plots, audio A/B and coefficient export." />
+    <meta property="og:image" content="https://hermes98761234.github.io/dsp-filter-lab/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="DSP Filter Lab logo with the headline: design FIR and IIR filters" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DSP Filter Lab: design FIR and IIR filters in your browser" />
+    <meta name="twitter:description" content="Design filters, see their responses, try them on audio and export coefficients. Runs in your browser." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/dsp-filter-lab/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "DSP Filter Lab",
+        "url": "https://hermes98761234.github.io/dsp-filter-lab/",
+        "description": "Designs FIR and IIR digital filters, plots magnitude, phase, group delay, impulse, step and pole-zero responses, filters audio and exports coefficients.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript, Web Workers and Web Audio",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This tool needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
